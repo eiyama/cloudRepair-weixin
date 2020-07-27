@@ -1,0 +1,141 @@
+{
+	"easycom": {
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [		
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabbar/repair/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationBarTextStyle": "white"
+			}
+		},	
+		{
+			    "path" : "pages/tabbar/message/index",
+			    "style" : {
+					"navigationBarTitleText": "消息"
+				}
+		},
+		{
+			"path": "pages/tabbar/dataAnalyze/index",
+			"style": {
+				"navigationBarTitleText": "数据分析"
+			}
+		},	
+		{
+			"path" : "pages/tabbar/myImfor/index",
+			"style" : {
+				"navigationBarTitleText": "我的",
+				"navigationBarTextStyle": "white"
+			}
+		},
+		{
+			"path" : "pages/tabbar/myImfor/login",
+			"style" : { 
+				"navigationBarTextStyle": "white"
+			}
+		},			
+		{
+			"path" : "pages/tabbar/dataAnalyze/otherReport",
+			"style" : {}			
+		}												
+    ],
+	"subPackages":[{
+		"root":"subPages",
+		"pages":[			 
+			{
+			    "path" : "repair/allocation",
+			    "style" : {}
+			},
+			{
+			    "path" : "repair/orderDetail",
+			    "style" : {}
+			},
+			{
+			    "path" : "repair/followIn",
+			    "style" : {}
+			},
+			{
+			    "path" : "repair/followInRecord",
+			    "style" : {}
+			},
+			{
+				"path" : "repair/Lossstate",
+				"style" : {}			
+			},		
+			{
+				"path" : "repair/Lossrecord",
+				"style" : {}			
+			},
+			{
+				"path" : "repair/Carrepairstate",
+				"style" : {}			
+			},
+			{
+				"path" : "repair/Turninacar",
+				"style" : {}			
+			},
+			{
+				"path" : "repair/Close",
+				"style" : {}			
+			},
+			{
+				"path" : "repair/addorder",
+				"style" : {}
+			},
+			{
+				"path" : "repair/editOrder",
+				"style" : {}
+			},
+			{
+				"path" : "repair/searchOrder",
+				"style" : {}			
+			},
+			{
+				"path" : "repair/searchResult",
+				"style" : {}			
+			}		
+		]
+	}],
+	"globalStyle": {
+		"navigationStyle": "custom",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"borderStyle": "black",
+		"backgroundColor": "#f9f9f9",
+		"color": "#8F8F94",
+		"selectedColor": "#315ade",		
+		"iconWidth":"25px",
+		"list": [{
+				"pagePath": "pages/tabbar/repair/index",
+				"iconPath": "static/img/tabbar/ic_tab_repair.png",
+				"selectedIconPath": "static/img/tabbar/ic_tab_repair_checked.png",
+				"text": "首页"				
+			},
+			{
+				"pagePath": "pages/tabbar/message/index",
+				"iconPath": "static/img/tabbar/ic_tab_msg.png",
+				"selectedIconPath": "static/img/tabbar/ic_tab_msg_checked.png",
+				"text": "工单监控"
+			},
+			{
+				"pagePath": "pages/tabbar/dataAnalyze/index",				
+				"iconPath": "static/img/tabbar/ic_tab_data.png",
+				"selectedIconPath": "static/img/tabbar/ic_tab_data_checked.png",
+				"text": "数据分析"
+			},
+			{
+				"pagePath": "pages/tabbar/myImfor/index",
+				"iconPath": "static/img/tabbar/ic_tab_me.png",
+				"selectedIconPath": "static/img/tabbar/ic_tab_me_checked.png",
+				"text": "我的"
+			}
+			
+		]
+	}
+}
